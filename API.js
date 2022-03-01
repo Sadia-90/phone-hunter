@@ -1,4 +1,5 @@
 const AllPhones = () => {
+  document.getElementById('Phone-container').innerHTML = "";
   const searchText = document.getElementById("search-box").value;
   const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
   console.log(url);
@@ -42,12 +43,19 @@ const information = (id) => {
 }
 
 const displayId = (data) => {
-  const detailsDiv = document.getElementById('details-div').innerHTML;
-  const div = document.createElement("div");
-  div.innerHTML =`
-  <div>
-  <img src="..." alt="...">
-  <h1>Name: </h1>
-  <h3>release date: </h3>
-  `
+  console.log(data);
+  document.getElementById('details-div').innerHTML = `
+    <div>
+//   <img src="${data.image}" alt="...">
+//   <h1>Name:${data.name} </h1>
+//   <h3>release date:${data.releaseDate} </h3>
+     </div>
+    `
+  //   const div = document.createElement("div");
+  //   div.innerHTML = `
+  //   
+  //   `
+  //   detailsDiv.appendChild(div);
+  // 
+
 }
