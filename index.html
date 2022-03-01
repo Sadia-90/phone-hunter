@@ -19,41 +19,57 @@
         <h1>Leading Smartphone </h1>
     </header>
 
-    <div class="container w-100 m-auto">
-        <div class="row text-center">
-            <div class="col-md-6 ">
-                <h2>left side</h2>
+    <div class="container w-100 mx-auto">
 
-                <div class="input-group mb-3">
-                    <input id="search-box" type="text" class="form-control" placeholder="Search"> <button
-                        onclick="AllPhones()" class="btn btn-info" type="button" id="search-btn">Button</button>
-                    <div id="Phone-container">
+        <div class="input-group mb-3">
+            <input id="search-box" type="text" class="form-control" placeholder="Search"> <button onclick="AllPhones()"
+                class="btn btn-info" type="button" id="search-btn">Button</button>
 
-                    </div>
-                </div>
+        </div>
+    </div>
 
-            </div>
+    <!-- Details Div  -->
+    <div class="container">
+        <div id="details-div" class="text-center"></div>
+    </div>
+    <!-- Phone container -->
+    <div class="container">
+        <div id="Phone-container" class="row row-cols-1 row-cols-md-3 g-4">
 
-            <div class="col-md-6 text-center">
+        </div>
+    </div>
+    <!--             <div class="col-md-6 text-center">
                 <h2>right side</h2>
 
             </div>
+ -->
+
+
+
+    <!-- <div class="card border">
+                <div class="pro-pic">
+                  <img class="w-25" src="${phoneItem.image}" alt="...">
+                </div>  
+                  <h5>Name: ${phoneItem.phone_name}</h5>
+                  <h4>Brand: ${phoneItem.brand}</h4>
+                 <div>
+                  <button class="btn btn-info">information</button>
+                </div>
+              
+              </div> -->
 
 
 
 
 
 
+    <!-- bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
-
-
-            <!-- bootstrap link -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                crossorigin="anonymous"></script>
-
-            <!-- api.js -->
-            <script src="./API.js"></script>
+    <!-- api.js -->
+    <script src="./API.js"></script>
 </body>
 
 </html>
